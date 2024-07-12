@@ -1,0 +1,552 @@
+\ Model Fleet Decarbonization_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ Use_Variable_constraint[2023,Electricity,D3,BEV_S3_2023]:
+   vehicle_list_fuels[BEV_S3_2023,2023,Electricity,D3] = 0
+ Use_Variable_constraint[2023,Electricity,D3,BEV_S3_2024]:
+   vehicle_list_fuels[BEV_S3_2024,2023,Electricity,D3] = 0
+ Use_Variable_constraint[2023,Electricity,D3,BEV_S3_2028]:
+   vehicle_list_fuels[BEV_S3_2028,2023,Electricity,D3] = 0
+ Distance_constraint[Electricity,2023,D3,BEV_S3_2025]:
+   distance[BEV_S3_2025,2023,Electricity,D3] = 0
+ Distance_constraint[Electricity,2023,D3,BEV_S3_2026]:
+   distance[BEV_S3_2026,2023,Electricity,D3] = 0
+ Distance_constraint[Electricity,2023,D3,BEV_S3_2027]:
+   distance[BEV_S3_2027,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2029,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2029,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2030,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2030,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2031,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2031,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2032,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2032,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2036,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2036,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[BEV_S3_2037,2023,Electricity,D3]:
+   vehicle_list_fuels[BEV_S3_2037,2023,Electricity,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2024,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2024,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2025,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2025,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2025,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2025,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2026,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2026,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2027,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2027,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2027,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2027,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2028,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2028,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2030,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2030,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2031,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2031,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2034,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2034,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2034,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2034,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2035,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2035,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2037,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2037,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2037,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2037,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2038,2023,B20,D3]:
+   vehicle_list_fuels[Diesel_S3_2038,2023,B20,D3] = 0
+ Use_Variable_constraint_for_Year_Set[Diesel_S3_2038,2023,HVO,D3]:
+   vehicle_list_fuels[Diesel_S3_2038,2023,HVO,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2024,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2024,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2024,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2024,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2026,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2026,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2027,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2027,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2028,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2028,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2028,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2028,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2029,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2029,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2029,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2029,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2030,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2030,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2031,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2031,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2032,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2032,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2033,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2033,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2034,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2034,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2034,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2034,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2035,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2035,2023,LNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2036,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2036,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2037,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2037,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2038,2023,BioLNG,D3]:
+   vehicle_list_fuels[LNG_S3_2038,2023,BioLNG,D3] = 0
+ Use_Variable_constraint_for_Year_Set[LNG_S3_2038,2023,LNG,D3]:
+   vehicle_list_fuels[LNG_S3_2038,2023,LNG,D3] = 0
+ Distance_constraint_for_Year_Set[BEV_S3_2033,2023,Electricity,D3]:
+   distance[BEV_S3_2033,2023,Electricity,D3] = 0
+ Distance_constraint_for_Year_Set[BEV_S3_2034,2023,Electricity,D3]:
+   distance[BEV_S3_2034,2023,Electricity,D3] = 0
+ Distance_constraint_for_Year_Set[BEV_S3_2035,2023,Electricity,D3]:
+   distance[BEV_S3_2035,2023,Electricity,D3] = 0
+ Distance_constraint_for_Year_Set[BEV_S3_2038,2023,Electricity,D3]:
+   distance[BEV_S3_2038,2023,Electricity,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2024,2023,HVO,D3]:
+   distance[Diesel_S3_2024,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2026,2023,B20,D3]:
+   distance[Diesel_S3_2026,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2028,2023,HVO,D3]:
+   distance[Diesel_S3_2028,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2029,2023,B20,D3]:
+   distance[Diesel_S3_2029,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2029,2023,HVO,D3]:
+   distance[Diesel_S3_2029,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2030,2023,HVO,D3]:
+   distance[Diesel_S3_2030,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2031,2023,B20,D3]:
+   distance[Diesel_S3_2031,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2032,2023,B20,D3]:
+   distance[Diesel_S3_2032,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2032,2023,HVO,D3]:
+   distance[Diesel_S3_2032,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2033,2023,B20,D3]:
+   distance[Diesel_S3_2033,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2033,2023,HVO,D3]:
+   distance[Diesel_S3_2033,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2035,2023,B20,D3]:
+   distance[Diesel_S3_2035,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2036,2023,B20,D3]:
+   distance[Diesel_S3_2036,2023,B20,D3] = 0
+ Distance_constraint_for_Year_Set[Diesel_S3_2036,2023,HVO,D3]:
+   distance[Diesel_S3_2036,2023,HVO,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2025,2023,BioLNG,D3]:
+   distance[LNG_S3_2025,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2025,2023,LNG,D3]:
+   distance[LNG_S3_2025,2023,LNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2026,2023,BioLNG,D3]:
+   distance[LNG_S3_2026,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2027,2023,BioLNG,D3]:
+   distance[LNG_S3_2027,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2030,2023,BioLNG,D3]:
+   distance[LNG_S3_2030,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2031,2023,BioLNG,D3]:
+   distance[LNG_S3_2031,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2032,2023,BioLNG,D3]:
+   distance[LNG_S3_2032,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2033,2023,BioLNG,D3]:
+   distance[LNG_S3_2033,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2035,2023,BioLNG,D3]:
+   distance[LNG_S3_2035,2023,BioLNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2036,2023,LNG,D3]:
+   distance[LNG_S3_2036,2023,LNG,D3] = 0
+ Distance_constraint_for_Year_Set[LNG_S3_2037,2023,LNG,D3]:
+   distance[LNG_S3_2037,2023,LNG,D3] = 0
+ Vehicle_Mass_Balance_for_10_Years[Diesel_S3_2023]: - buy[Diesel_S3_2023]
+   + sell[Diesel_S3_2023,2023] + sell[Diesel_S3_2023,2024]
+   + sell[Diesel_S3_2023,2025] + sell[Diesel_S3_2023,2026]
+   + sell[Diesel_S3_2023,2027] + sell[Diesel_S3_2023,2028]
+   + sell[Diesel_S3_2023,2029] = 0
+ Vehicle_Mass_Balance_for_10_Years[LNG_S3_2023]: - buy[LNG_S3_2023]
+   + sell[LNG_S3_2023,2023] + sell[LNG_S3_2023,2024]
+   + sell[LNG_S3_2023,2025] + sell[LNG_S3_2023,2026]
+   + sell[LNG_S3_2023,2027] + sell[LNG_S3_2023,2028]
+   + sell[LNG_S3_2023,2029] = 0
+ Vehicle_Mass_Balance_for_less_than_10_Years[Diesel_S3_2023]:
+   - buy[Diesel_S3_2023] + sell[Diesel_S3_2023,2030]
+   + sell[Diesel_S3_2023,2031] + sell[Diesel_S3_2023,2032] = 0
+ Vehicle_Mass_Balance_for_less_than_10_Years[LNG_S3_2023]:
+   - buy[LNG_S3_2023] + sell[LNG_S3_2023,2030] + sell[LNG_S3_2023,2031]
+   + sell[LNG_S3_2023,2032] = 0
+ Buy_Sell_Equality[Diesel_S3_2023,2036]: buy[Diesel_S3_2023]
+   - sell[Diesel_S3_2023,2023] - sell[Diesel_S3_2023,2024]
+   - sell[Diesel_S3_2023,2025] - sell[Diesel_S3_2023,2026]
+   - sell[Diesel_S3_2023,2027] - sell[Diesel_S3_2023,2028]
+   - sell[Diesel_S3_2023,2029] - sell[Diesel_S3_2023,2030]
+   - sell[Diesel_S3_2023,2031] - sell[Diesel_S3_2023,2032]
+   - sell[Diesel_S3_2023,2033] - sell[Diesel_S3_2023,2034]
+   - sell[Diesel_S3_2023,2035] - vehicle_list[Diesel_S3_2023,2036] = 0
+ Buy_Sell_Equality[LNG_S3_2023,2035]: buy[LNG_S3_2023]
+   - sell[LNG_S3_2023,2023] - sell[LNG_S3_2023,2024]
+   - sell[LNG_S3_2023,2025] - sell[LNG_S3_2023,2026]
+   - sell[LNG_S3_2023,2027] - sell[LNG_S3_2023,2028]
+   - sell[LNG_S3_2023,2029] - sell[LNG_S3_2023,2030]
+   - sell[LNG_S3_2023,2031] - sell[LNG_S3_2023,2032]
+   - sell[LNG_S3_2023,2033] - sell[LNG_S3_2023,2034]
+   - vehicle_list[LNG_S3_2023,2035] = 0
+ Additonal_Use_Balance[Diesel_S3_2023,B20,D3,2023]: - 8 buy[Diesel_S3_2023]
+   + vehicle_list_fuels[Diesel_S3_2023,2023,B20,D3] <= 0
+ Additonal_Use_Balance[Diesel_S3_2023,HVO,D3,2023]: - 8 buy[Diesel_S3_2023]
+   + vehicle_list_fuels[Diesel_S3_2023,2023,HVO,D3] <= 0
+ Additonal_Use_Balance[LNG_S3_2023,LNG,D3,2023]: - 8 buy[LNG_S3_2023]
+   + vehicle_list_fuels[LNG_S3_2023,2023,LNG,D3] <= 0
+ Additonal_Use_Balance[LNG_S3_2023,BioLNG,D3,2023]: - 8 buy[LNG_S3_2023]
+   + vehicle_list_fuels[LNG_S3_2023,2023,BioLNG,D3] <= 0
+ Demand_satisfaction_constraint[2023,S3,D3]: [
+   vehicle_list_fuels[BEV_S3_2023,2023,Electricity,D3] * distance[BEV_S3_2023,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2024,2023,Electricity,D3] * distance[BEV_S3_2024,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2025,2023,Electricity,D3] * distance[BEV_S3_2025,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2026,2023,Electricity,D3] * distance[BEV_S3_2026,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2027,2023,Electricity,D3] * distance[BEV_S3_2027,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2028,2023,Electricity,D3] * distance[BEV_S3_2028,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2029,2023,Electricity,D3] * distance[BEV_S3_2029,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2030,2023,Electricity,D3] * distance[BEV_S3_2030,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2031,2023,Electricity,D3] * distance[BEV_S3_2031,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2032,2023,Electricity,D3] * distance[BEV_S3_2032,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2033,2023,Electricity,D3] * distance[BEV_S3_2033,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2034,2023,Electricity,D3] * distance[BEV_S3_2034,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2035,2023,Electricity,D3] * distance[BEV_S3_2035,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2036,2023,Electricity,D3] * distance[BEV_S3_2036,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2037,2023,Electricity,D3] * distance[BEV_S3_2037,2023,Electricity,D3]
+   + vehicle_list_fuels[BEV_S3_2038,2023,Electricity,D3] * distance[BEV_S3_2038,2023,Electricity,D3]
+   + vehicle_list_fuels[Diesel_S3_2023,2023,B20,D3] * distance[Diesel_S3_2023,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2023,2023,HVO,D3] * distance[Diesel_S3_2023,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2024,2023,B20,D3] * distance[Diesel_S3_2024,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2024,2023,HVO,D3] * distance[Diesel_S3_2024,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2025,2023,B20,D3] * distance[Diesel_S3_2025,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2025,2023,HVO,D3] * distance[Diesel_S3_2025,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2026,2023,B20,D3] * distance[Diesel_S3_2026,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2026,2023,HVO,D3] * distance[Diesel_S3_2026,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2027,2023,B20,D3] * distance[Diesel_S3_2027,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2027,2023,HVO,D3] * distance[Diesel_S3_2027,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2028,2023,B20,D3] * distance[Diesel_S3_2028,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2028,2023,HVO,D3] * distance[Diesel_S3_2028,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2029,2023,B20,D3] * distance[Diesel_S3_2029,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2029,2023,HVO,D3] * distance[Diesel_S3_2029,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2030,2023,B20,D3] * distance[Diesel_S3_2030,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2030,2023,HVO,D3] * distance[Diesel_S3_2030,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2031,2023,B20,D3] * distance[Diesel_S3_2031,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2031,2023,HVO,D3] * distance[Diesel_S3_2031,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2032,2023,B20,D3] * distance[Diesel_S3_2032,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2032,2023,HVO,D3] * distance[Diesel_S3_2032,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2033,2023,B20,D3] * distance[Diesel_S3_2033,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2033,2023,HVO,D3] * distance[Diesel_S3_2033,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2034,2023,B20,D3] * distance[Diesel_S3_2034,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2034,2023,HVO,D3] * distance[Diesel_S3_2034,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2035,2023,B20,D3] * distance[Diesel_S3_2035,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2035,2023,HVO,D3] * distance[Diesel_S3_2035,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2036,2023,B20,D3] * distance[Diesel_S3_2036,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2036,2023,HVO,D3] * distance[Diesel_S3_2036,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2037,2023,B20,D3] * distance[Diesel_S3_2037,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2037,2023,HVO,D3] * distance[Diesel_S3_2037,2023,HVO,D3]
+   + vehicle_list_fuels[Diesel_S3_2038,2023,B20,D3] * distance[Diesel_S3_2038,2023,B20,D3]
+   + vehicle_list_fuels[Diesel_S3_2038,2023,HVO,D3] * distance[Diesel_S3_2038,2023,HVO,D3]
+   + vehicle_list_fuels[LNG_S3_2023,2023,BioLNG,D3] * distance[LNG_S3_2023,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2023,2023,LNG,D3] * distance[LNG_S3_2023,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2024,2023,BioLNG,D3] * distance[LNG_S3_2024,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2024,2023,LNG,D3] * distance[LNG_S3_2024,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2025,2023,BioLNG,D3] * distance[LNG_S3_2025,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2025,2023,LNG,D3] * distance[LNG_S3_2025,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2026,2023,BioLNG,D3] * distance[LNG_S3_2026,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2026,2023,LNG,D3] * distance[LNG_S3_2026,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2027,2023,BioLNG,D3] * distance[LNG_S3_2027,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2027,2023,LNG,D3] * distance[LNG_S3_2027,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2028,2023,BioLNG,D3] * distance[LNG_S3_2028,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2028,2023,LNG,D3] * distance[LNG_S3_2028,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2029,2023,BioLNG,D3] * distance[LNG_S3_2029,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2029,2023,LNG,D3] * distance[LNG_S3_2029,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2030,2023,BioLNG,D3] * distance[LNG_S3_2030,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2030,2023,LNG,D3] * distance[LNG_S3_2030,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2031,2023,BioLNG,D3] * distance[LNG_S3_2031,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2031,2023,LNG,D3] * distance[LNG_S3_2031,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2032,2023,BioLNG,D3] * distance[LNG_S3_2032,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2032,2023,LNG,D3] * distance[LNG_S3_2032,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2033,2023,BioLNG,D3] * distance[LNG_S3_2033,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2033,2023,LNG,D3] * distance[LNG_S3_2033,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2034,2023,BioLNG,D3] * distance[LNG_S3_2034,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2034,2023,LNG,D3] * distance[LNG_S3_2034,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2035,2023,BioLNG,D3] * distance[LNG_S3_2035,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2035,2023,LNG,D3] * distance[LNG_S3_2035,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2036,2023,BioLNG,D3] * distance[LNG_S3_2036,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2036,2023,LNG,D3] * distance[LNG_S3_2036,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2037,2023,BioLNG,D3] * distance[LNG_S3_2037,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2037,2023,LNG,D3] * distance[LNG_S3_2037,2023,LNG,D3]
+   + vehicle_list_fuels[LNG_S3_2038,2023,BioLNG,D3] * distance[LNG_S3_2038,2023,BioLNG,D3]
+   + vehicle_list_fuels[LNG_S3_2038,2023,LNG,D3] * distance[LNG_S3_2038,2023,LNG,D3]
+   ] >= 1.002466e+06
+Bounds
+ buy[Diesel_S3_2023] free
+ buy[LNG_S3_2023] free
+ sell[Diesel_S3_2023,2023] free
+ sell[Diesel_S3_2023,2024] free
+ sell[Diesel_S3_2023,2025] free
+ sell[Diesel_S3_2023,2026] free
+ sell[Diesel_S3_2023,2027] free
+ sell[Diesel_S3_2023,2028] free
+ sell[Diesel_S3_2023,2029] free
+ sell[Diesel_S3_2023,2030] free
+ sell[Diesel_S3_2023,2031] free
+ sell[Diesel_S3_2023,2032] free
+ sell[LNG_S3_2023,2023] free
+ sell[LNG_S3_2023,2024] free
+ sell[LNG_S3_2023,2025] free
+ sell[LNG_S3_2023,2026] free
+ sell[LNG_S3_2023,2027] free
+ sell[LNG_S3_2023,2028] free
+ sell[LNG_S3_2023,2029] free
+ sell[LNG_S3_2023,2030] free
+ sell[LNG_S3_2023,2031] free
+ sell[LNG_S3_2023,2032] free
+ vehicle_list_fuels[BEV_S3_2023,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2024,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2025,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2026,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2027,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2028,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2029,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2030,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2031,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2032,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2033,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2034,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2035,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2036,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2037,2023,Electricity,D3] free
+ vehicle_list_fuels[BEV_S3_2038,2023,Electricity,D3] free
+ vehicle_list_fuels[Diesel_S3_2023,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2024,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2024,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2025,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2025,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2026,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2026,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2027,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2027,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2028,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2028,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2029,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2029,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2030,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2030,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2031,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2031,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2032,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2032,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2033,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2033,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2034,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2034,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2035,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2035,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2036,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2036,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2037,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2037,2023,HVO,D3] free
+ vehicle_list_fuels[Diesel_S3_2038,2023,B20,D3] free
+ vehicle_list_fuels[Diesel_S3_2038,2023,HVO,D3] free
+ vehicle_list_fuels[LNG_S3_2024,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2024,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2025,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2025,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2026,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2026,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2027,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2027,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2028,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2028,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2029,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2029,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2030,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2030,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2031,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2031,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2032,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2032,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2033,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2033,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2034,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2034,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2035,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2035,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2036,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2036,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2037,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2037,2023,LNG,D3] free
+ vehicle_list_fuels[LNG_S3_2038,2023,BioLNG,D3] free
+ vehicle_list_fuels[LNG_S3_2038,2023,LNG,D3] free
+ distance[BEV_S3_2023,2023,Electricity,D3] free
+ distance[BEV_S3_2024,2023,Electricity,D3] free
+ distance[BEV_S3_2025,2023,Electricity,D3] free
+ distance[BEV_S3_2026,2023,Electricity,D3] free
+ distance[BEV_S3_2027,2023,Electricity,D3] free
+ distance[BEV_S3_2028,2023,Electricity,D3] free
+ distance[BEV_S3_2029,2023,Electricity,D3] free
+ distance[BEV_S3_2030,2023,Electricity,D3] free
+ distance[BEV_S3_2031,2023,Electricity,D3] free
+ distance[BEV_S3_2032,2023,Electricity,D3] free
+ distance[BEV_S3_2033,2023,Electricity,D3] free
+ distance[BEV_S3_2034,2023,Electricity,D3] free
+ distance[BEV_S3_2035,2023,Electricity,D3] free
+ distance[BEV_S3_2036,2023,Electricity,D3] free
+ distance[BEV_S3_2037,2023,Electricity,D3] free
+ distance[BEV_S3_2038,2023,Electricity,D3] free
+ distance[Diesel_S3_2023,2023,HVO,D3] free
+ distance[Diesel_S3_2024,2023,B20,D3] free
+ distance[Diesel_S3_2024,2023,HVO,D3] free
+ distance[Diesel_S3_2025,2023,B20,D3] free
+ distance[Diesel_S3_2025,2023,HVO,D3] free
+ distance[Diesel_S3_2026,2023,B20,D3] free
+ distance[Diesel_S3_2026,2023,HVO,D3] free
+ distance[Diesel_S3_2027,2023,B20,D3] free
+ distance[Diesel_S3_2027,2023,HVO,D3] free
+ distance[Diesel_S3_2028,2023,B20,D3] free
+ distance[Diesel_S3_2028,2023,HVO,D3] free
+ distance[Diesel_S3_2029,2023,B20,D3] free
+ distance[Diesel_S3_2029,2023,HVO,D3] free
+ distance[Diesel_S3_2030,2023,B20,D3] free
+ distance[Diesel_S3_2030,2023,HVO,D3] free
+ distance[Diesel_S3_2031,2023,B20,D3] free
+ distance[Diesel_S3_2031,2023,HVO,D3] free
+ distance[Diesel_S3_2032,2023,B20,D3] free
+ distance[Diesel_S3_2032,2023,HVO,D3] free
+ distance[Diesel_S3_2033,2023,B20,D3] free
+ distance[Diesel_S3_2033,2023,HVO,D3] free
+ distance[Diesel_S3_2034,2023,B20,D3] free
+ distance[Diesel_S3_2034,2023,HVO,D3] free
+ distance[Diesel_S3_2035,2023,B20,D3] free
+ distance[Diesel_S3_2035,2023,HVO,D3] free
+ distance[Diesel_S3_2036,2023,B20,D3] free
+ distance[Diesel_S3_2036,2023,HVO,D3] free
+ distance[Diesel_S3_2037,2023,B20,D3] free
+ distance[Diesel_S3_2037,2023,HVO,D3] free
+ distance[Diesel_S3_2038,2023,B20,D3] free
+ distance[Diesel_S3_2038,2023,HVO,D3] free
+ distance[LNG_S3_2023,2023,BioLNG,D3] free
+ distance[LNG_S3_2023,2023,LNG,D3] free
+ distance[LNG_S3_2024,2023,BioLNG,D3] free
+ distance[LNG_S3_2024,2023,LNG,D3] free
+ distance[LNG_S3_2025,2023,BioLNG,D3] free
+ distance[LNG_S3_2025,2023,LNG,D3] free
+ distance[LNG_S3_2026,2023,BioLNG,D3] free
+ distance[LNG_S3_2026,2023,LNG,D3] free
+ distance[LNG_S3_2027,2023,BioLNG,D3] free
+ distance[LNG_S3_2027,2023,LNG,D3] free
+ distance[LNG_S3_2028,2023,BioLNG,D3] free
+ distance[LNG_S3_2028,2023,LNG,D3] free
+ distance[LNG_S3_2029,2023,BioLNG,D3] free
+ distance[LNG_S3_2029,2023,LNG,D3] free
+ distance[LNG_S3_2030,2023,BioLNG,D3] free
+ distance[LNG_S3_2030,2023,LNG,D3] free
+ distance[LNG_S3_2031,2023,BioLNG,D3] free
+ distance[LNG_S3_2031,2023,LNG,D3] free
+ distance[LNG_S3_2032,2023,BioLNG,D3] free
+ distance[LNG_S3_2032,2023,LNG,D3] free
+ distance[LNG_S3_2033,2023,BioLNG,D3] free
+ distance[LNG_S3_2033,2023,LNG,D3] free
+ distance[LNG_S3_2034,2023,BioLNG,D3] free
+ distance[LNG_S3_2034,2023,LNG,D3] free
+ distance[LNG_S3_2035,2023,BioLNG,D3] free
+ distance[LNG_S3_2035,2023,LNG,D3] free
+ distance[LNG_S3_2036,2023,BioLNG,D3] free
+ distance[LNG_S3_2036,2023,LNG,D3] free
+ distance[LNG_S3_2037,2023,BioLNG,D3] free
+ distance[LNG_S3_2037,2023,LNG,D3] free
+ distance[LNG_S3_2038,2023,BioLNG,D3] free
+ distance[LNG_S3_2038,2023,LNG,D3] free
+Generals
+ buy[Diesel_S3_2023] buy[LNG_S3_2023] sell[Diesel_S3_2023,2023]
+ sell[Diesel_S3_2023,2024] sell[Diesel_S3_2023,2025]
+ sell[Diesel_S3_2023,2026] sell[Diesel_S3_2023,2027]
+ sell[Diesel_S3_2023,2028] sell[Diesel_S3_2023,2029]
+ sell[Diesel_S3_2023,2030] sell[Diesel_S3_2023,2031]
+ sell[Diesel_S3_2023,2032] sell[Diesel_S3_2023,2033]
+ sell[Diesel_S3_2023,2034] sell[Diesel_S3_2023,2035] sell[LNG_S3_2023,2023]
+ sell[LNG_S3_2023,2024] sell[LNG_S3_2023,2025] sell[LNG_S3_2023,2026]
+ sell[LNG_S3_2023,2027] sell[LNG_S3_2023,2028] sell[LNG_S3_2023,2029]
+ sell[LNG_S3_2023,2030] sell[LNG_S3_2023,2031] sell[LNG_S3_2023,2032]
+ sell[LNG_S3_2023,2033] sell[LNG_S3_2023,2034]
+ vehicle_list[Diesel_S3_2023,2036] vehicle_list[LNG_S3_2023,2035]
+ vehicle_list_fuels[BEV_S3_2023,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2024,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2025,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2026,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2027,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2028,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2029,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2030,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2031,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2032,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2033,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2034,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2035,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2036,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2037,2023,Electricity,D3]
+ vehicle_list_fuels[BEV_S3_2038,2023,Electricity,D3]
+ vehicle_list_fuels[Diesel_S3_2023,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2023,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2024,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2024,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2025,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2025,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2026,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2026,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2027,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2027,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2028,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2028,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2029,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2029,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2030,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2030,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2031,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2031,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2032,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2032,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2033,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2033,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2034,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2034,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2035,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2035,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2036,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2036,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2037,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2037,2023,HVO,D3]
+ vehicle_list_fuels[Diesel_S3_2038,2023,B20,D3]
+ vehicle_list_fuels[Diesel_S3_2038,2023,HVO,D3]
+ vehicle_list_fuels[LNG_S3_2023,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2023,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2024,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2024,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2025,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2025,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2026,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2026,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2027,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2027,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2028,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2028,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2029,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2029,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2030,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2030,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2031,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2031,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2032,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2032,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2033,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2033,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2034,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2034,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2035,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2035,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2036,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2036,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2037,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2037,2023,LNG,D3]
+ vehicle_list_fuels[LNG_S3_2038,2023,BioLNG,D3]
+ vehicle_list_fuels[LNG_S3_2038,2023,LNG,D3]
+End
